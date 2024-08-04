@@ -6,7 +6,12 @@
       <title>Document</title>
    </head>
    <body>
-      <form action="">
+      <!-- <form>태그: 데이터를 담아서 전송하는 택배상자와 같은 역할(반드시 사용)
+            - action: 데이터를 전송할 주소
+            - method: 데이터를 전송하는 방식(post-숨김, get-노출) 
+      -->
+      <!-- name속성: 서버가 구분하기 위한 이름, value속성: 서버가 받는 값  -->
+      <form action="/order" method="post">
          <fieldset>
             <legend>상품 선택</legend>
             <p><b>주문할 상품을 선택해 주세요.</b></p>

@@ -6,18 +6,14 @@
       <title>Document</title>
    </head>
    <body>
-      <!-- <form>태그: 데이터를 담아서 전송하는 택배상자와 같은 역할(반드시 사용)
-         - action: 데이터를 전송할 주소
-         - method: 데이터를 전송하는 방식(post-숨김, get-노출) 
-         -->
       <form action="/login" method="post">
          <!-- <label>과 <input>태그는  웹접근성을 위해 반드시 같이 사용 -->
-         <!-- name속성: 서버가 구분하기 위한 이름, value속성: 서버가 받는 값, size속성: 영문자 대문자 갯수만큼의 size. CSS로 지정가능하므로 사용하지 않아도 된다. -->
          <label for="user_id">아이디:</label>
-         <input type="text" name="user_id" id="user_id" size="10" value="test" />
+         <!-- size속성: 영문자 대문자 갯수만큼의 size. CSS로 지정가능하므로 사용하지 않아도 된다. -->
+         <input type="text" id="user_id" name="use_id" size="10" />
 
          <label for="user_pw">비밀번호:</label>
-         <input type="password" name="user_pw" id="user_pw" size="10" value="12345" />
+         <input type="password" id="user_pw" name="user_pw" size="10" />
 
          <!-- submit버튼 클릭시 서버에 사용자가 입력한 데이터 전송 -->
          <input type="submit" value="로그인" />
