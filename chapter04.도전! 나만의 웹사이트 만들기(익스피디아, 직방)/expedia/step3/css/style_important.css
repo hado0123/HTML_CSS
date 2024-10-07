@@ -4,23 +4,23 @@
 body {
    margin: 0;
    padding: 0;
-   font-size: 0.9em;
+   font-size: 0.9em !important;
 }
 
 ul {
    list-style: none;
-   margin: 0;
-   padding: 0;
+   margin: 0 !important;
+   padding: 0 !important;
 }
 
 a {
-   color: black;
-   text-decoration: none;
+   color: black !important;
+   text-decoration: none !important;
    cursor: pointer;
 }
 
 p {
-   margin: 0;
+   margin: 0 !important;
 }
 
 .wrap {
@@ -45,7 +45,7 @@ nav {
 }
 
 nav a:hover {
-   color: rgb(36, 36, 206);
+   color: rgb(36, 36, 206) !important;
 }
 
 .nav__logo {
@@ -69,7 +69,7 @@ nav a:hover {
 }
 
 .nav__top-button > .dropdown-menu a {
-   font-size: 0.9rem;
+   font-size: 0.9rem !important;
 }
 
 .nav__menu {
@@ -315,11 +315,11 @@ main {
 }
 
 .main__more a {
-   color: rgb(36, 36, 206);
+   color: rgb(36, 36, 206) !important;
 }
 
 .main__more a:hover {
-   text-decoration: underline;
+   text-decoration: underline !important;
 }
 
 /* 푸터 */
@@ -355,7 +355,7 @@ footer {
 }
 
 .sitemap > li > ul > li > a {
-   color: rgb(36, 36, 206);
+   color: rgb(36, 36, 206) !important;
    font-size: 12px;
 }
 
@@ -395,9 +395,9 @@ footer {
 }
 
 .modal-body > ul a {
-   color: rgb(36, 36, 206);
+   color: rgb(36, 36, 206) !important;
 }
 
 .modal-body > ul a:hover {
-   text-decoration: underline;
+   text-decoration: underline !important;
 }

@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .parent {
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         .parent {
             position: relative;
             width: 400px;
             height: 200px;
             top: 100px;
             left: 100px;
             background: royalblue;
-        } 
+            /* 음수값 배치시 
+            음수 값은 해당 요소가 다른 요소들보다 아래에 위치하도록 설정합니다.부모 요소와의 관계에서, 음수 값을 가진 자식 요소는 부모 요소의 경계 안에서만 쌓입니다. 즉, 부모 요소보다 뒤로 갈 수는 없습니다. => 이때 부모요소에도 z-index를 적용을 하는데 이는 양수나 음수 그 어떤 값도 상관 없습니다.
+            */
+            z-index: 0;
+         }
 
-        .child1 {
+         .child1 {
             position: absolute;
             top: 80px;
             right: 150px;
             width: 200px;
             height: 100px;
             background: salmon;
-            /* 숫자가 클수록 위에 있고, 작을수록 아래에 있다. */
-            /* 비정상적으로 큰 수치를 주면 웹사이트의 가장 위에 위치하고
-               비정상적으로 작은 수치를 주면 웹사이트의 가장 아래에 위치한다. */
-            z-index: 2;
-        }
+            /* 양수값 배치시
+            양수 값은 해당 요소가 다른 요소들보다 위에 위치하도록 설정합니다. 양수 값이 클수록 화면에서 더 앞쪽에 배치됩니다. 즉, 높은 z-index 값을 가진 요소가 더 위에 쌓입니다.
+            */
 
-        .child2 {
+            /* z-index: 2; */
+            z-index: -1;
+         }
+
+         .child2 {
             position: absolute;
             top: 80px;
             right: 100px;
             width: 200px;
             height: 100px;
             background: rgb(170, 245, 152);
-            z-index: 1;
-        }
-    </style>
-</head>
-<body>
-    <div class="parent">
-        <div class="child1">1</div>
-        <div class="child2">2</div>
-    </div>
-</body>
+            /* z-index: 1; */
+            z-index: -2;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="child1">1</div>
+         <div class="child2">2</div>
+      </div>
+   </body>
 </html>

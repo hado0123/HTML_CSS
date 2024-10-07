@@ -18,35 +18,35 @@
             <!-- <checkbox>: 중복선택 가능 -->
             <!-- value속성의 속성값이 실제 서버로 전송되는 데이터 -->
             <!-- value값은 임의로 지정, 한글X, 영문자 숫자 등 가능 -->
-            <input type="checkbox" value="s_3" name="box"> 선물용 3kg
-            <input type="checkbox" value="s_5" name="box"> 선물용 5kg
-            <input type="checkbox" value="f_3" name="box"> 가정용 3kg
-            <input type="checkbox" value="f_5" name="box"> 가정용 5kg
+            <label for="box_s_3"><input type="checkbox" value="s_3" name="box" id="box_s_3" /> 선물용 3kg</label>
+            <label for="box_s_5"><input type="checkbox" value="s_5" name="box" id="box_s_5" /> 선물용 5kg </label>
+            <input type="checkbox" value="f_3" name="box" /> <label for="box_f_3">가정용 3kg </label> 
+            <input type="checkbox" value="f_5" name="box" /> <label for="box_f_5">가정용 5kg </label>
 
             <p><b>포장 선택</b></p>
             <!-- <radio>: 중복선택 X -->
             <!-- value속성의 속성값이 실제 서버로 전송되는 데이터 -->
-            <input type="radio" value="yes" name="gift"> 선물 포장
-            <input type="radio" value="no" name="gift"> 선물 포장 안함
+            <label for="gift_yes"><input type="radio" value="yes" name="gift" id="gift_yes" /> 선물 포장 </label>
+            <label for="gift_no"> <input type="radio" value="no" name="gift" id="gift_no"/> 선물 포장 안함</label>
          </fieldset>
          <fieldset>
             <legend>배송 정보</legend>
             <ul>
                <li>
                   <label for="user-name">이름</label>
-                  <input type="text" id="user-name" name="user-name"/>
+                  <input type="text" id="user-name" name="user-name" />
                </li>
                <li>
                   <label for="addr">배송주소</label>
-                  <input type="text" id="addr" name="addr"/>
+                  <input type="text" id="addr" name="addr" />
                </li>
                <li>
                   <label for="email">이메일</label>
-                  <input type="email" id="email" name="email"/>
+                  <input type="email" id="email" name="email" />
                </li>
                <li>
                   <label for="phone">연락처</label>
-                  <input type="tel" id="phone" name="phone"/>
+                  <input type="tel" id="phone" name="phone" />
                </li>
                <li>
                   <input type="submit" value="주문" />

@@ -93,6 +93,7 @@ main {
 
 .hotclick__funding {
    width: 33.33%;
+   /* flex: 1; */
 }
 
 .aside {
