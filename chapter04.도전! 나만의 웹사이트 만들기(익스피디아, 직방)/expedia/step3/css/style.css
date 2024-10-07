@@ -255,7 +255,7 @@ main {
 
 .banner3__content {
    height: 190px;
-   display: flex;
+   display: flex; /* 인라인태그는 flex 적용시 width, height, marging 적용가능*/
    border: 1px solid gray;
    border-radius: 10px;
    /* cursor: pointer; */
@@ -263,10 +263,9 @@ main {
 
 .banner3__content > div:nth-child(1) {
    border-radius: 10px 0 0 10px;
-   height: 100%;
    background-image: url(../images/banner3.jpg);
    background-repeat: no-repeat;
-   background-position: left;
+   background-position: center;
    background-size: 100% 100%;
    width: 55%;
 }
@@ -298,10 +297,9 @@ main {
    background-position: center;
    background-size: cover;
    margin-right: 20px;
-   display: flex;
+   display: flex; /* 인라인태그는 flex 적용시 width, height, marging 적용가능*/
    flex-direction: column;
    justify-content: flex-end;
-   color: white;
    padding-left: 10px;
 }
 
