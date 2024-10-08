@@ -5,22 +5,22 @@
 body {
    margin: 0;
    padding: 0;
-   font-size: 0.9em !important;
+   font-size: 0.9em;
 }
 
 ul {
    list-style: none;
-   margin: 0 !important;
-   padding: 0 !important;
+   margin: 0;
+   padding: 0;
 }
 
 a {
-   color: black !important;
-   text-decoration: none !important;
+   color: black;
+   text-decoration: none;
 }
 
 p {
-   margin: 0 !important;
+   margin: 0;
 }
 
 .wrap {
@@ -32,7 +32,7 @@ p {
 
 header {
    position: relative;
-   height: 80px;
+   height: 85px;
 }
 
 nav {
@@ -43,9 +43,6 @@ nav {
 
    /* 직방은 header width가 100%입니다 */
    width: 100%;
-
-   /* 메뉴가 가장 위에 나오도록 */
-   z-index: 999;
 }
 
 .nav__menu > li {
@@ -66,7 +63,7 @@ nav .login {
    border: 1px solid rgb(202, 202, 202);
    border-radius: 5px;
    color: black;
-   width: 125px !important;
+   width: 125px;
    height: 30px;
    margin-right: 20px;
 }
