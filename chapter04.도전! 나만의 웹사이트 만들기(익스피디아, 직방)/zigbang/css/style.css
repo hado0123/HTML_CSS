@@ -96,6 +96,9 @@ nav .right-menu__btn {
    /* 하위 메뉴가 나타날 적절한 위치를 찾아 적용한다 */
    top: 85px;
    border: 1px solid rgb(202, 202, 202);
+
+   /* 하위메뉴 안보임 방지 */
+   z-index: 9999;
 }
 
 .nav__menu li:hover .sub-menu {
