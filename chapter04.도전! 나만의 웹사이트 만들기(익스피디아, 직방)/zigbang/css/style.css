@@ -101,9 +101,17 @@ nav .right-menu__btn {
    z-index: 9999;
 }
 
+.nav__menu li:hover a {
+   color: orange;
+}
+
 .nav__menu li:hover .sub-menu {
    /* 메뉴에 호버하면 .sub-menu가 나타도록 지정한다 */
    display: block;
+}
+
+.nav__menu li:hover .sub-menu a {
+   color: black;
 }
 
 .sub-menu > li {
